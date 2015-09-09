@@ -1,5 +1,6 @@
 extends layout
-
+block variables
+  title #{settings.locale.tx_title} #{tx.txid}
 block content
   - var time = format_unixtime(tx.timestamp)
   .col-xs-12.col-md-10.col-md-offset-1

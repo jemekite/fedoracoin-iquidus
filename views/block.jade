@@ -1,4 +1,6 @@
 extends layout
+block variables
+  title #{settings.locale.block_title} ##{block.height}
 
 block content
   - var time = format_unixtime(block.time)

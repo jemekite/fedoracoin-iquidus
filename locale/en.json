@@ -12,7 +12,7 @@
     "menu_reward": "Reward",
 
     // explorer view
-    "ex_title": "Block Explorer",
+    "ex_title": "Fedoracoin Block Explorer",
     "ex_search_title": "Search",
     "ex_search_button": "Search",
     "ex_search_message": "You may enter a block height, block hash, tx hash or address.",
@@ -24,7 +24,7 @@
     "ex_block": "Block",
 
     // transaction view
-    "tx_title": "Transaction Details",
+    "tx_title": "Fedoracoin Transaction",
     "tx_block_hash": "Block Hash",
     "tx_recipients": "Recipients",
     "tx_contributors": "Input Addresses",
@@ -35,7 +35,7 @@
     // block view
     "block_previous": "Previous",
     "block_next": "Next",
-    "block_title": "Block Details",
+    "block_title": "Fedoracoin Block",
     "block_genesis": "GENESIS",
 
     // global
@@ -56,11 +56,13 @@
     "initial_index_alert": "Indexing is currently incomplete, functionality is limited until index is up-to-date.",
 
     //address menu
+    "addrs_title": "Fedoracoin Address",
     "a_menu_showing": "Showing last",
     "a_menu_txs": "transactions",
     "a_menu_all": "All",
 
     //richlist
+    "rl_title": "Fedoracoin Richlist",
     "rl_received_coins": "Top 100 - Received Coins",
     "rl_current_balance": "Top 100 - Current Balance",
     "rl_received": "Received",
@@ -93,6 +95,7 @@
     "api_getnextrewardwhenstr": "Returns string describing how long until the votes are tallied and the next block reward is computed.",
 
     // Markets view
+    "mkt_title": "Fedoracoin Exchange",
     "mkt_hours": "24 hours",
     "mkt_view_chart": "View 24 hour summary",
     "mkt_view_summary": "View 24 hour chart",

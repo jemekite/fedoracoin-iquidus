@@ -1,5 +1,6 @@
 extends layout
-
+block variables
+  title Fedoracoin address #{address.a_id}
 block content
   - var balance = (address.received - address.sent) / 100000000;
   - var sent = address.sent /100000000
