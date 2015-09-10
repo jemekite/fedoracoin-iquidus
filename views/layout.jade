@@ -4,9 +4,8 @@ html
     block variables
     title = title
     link(rel='stylesheet', href='/themes/#{settings.theme}/bootstrap.min.css')
-    link(rel='stylesheet', href='/vendor/jqplot/jquery.jqplot.css')
-    link(rel='stylesheet', href='//cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.css')
-    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    link(rel='stylesheet', href='//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.css')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(rel="apple-touch-icon", sizes="57x57", href="/apple-touch-icon-57x57.png")
     link(rel="apple-touch-icon", sizes="60x60", href="/apple-touch-icon-60x60.png")
@@ -25,20 +24,13 @@ html
     meta(name="msapplication-TileColor", content="#2d89ef")
     meta(name="msapplication-TileImage", content="/mstile-144x144.png")
     meta(name="theme-color", content="#ffffff")
-    script(src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.0.min.js')
-    script(src='//ajax.aspnetcdn.com/ajax/bootstrap/3.1.1/bootstrap.min.js')
-    script(src='/vendor/jqplot/jquery.jqplot.min.js')
-    script(src='/vendor/jqplot/plugins/jqplot.dateAxisRenderer.min.js')
-    script(src='/vendor/jqplot/plugins/jqplot.ohlcRenderer.min.js')
-    script(src='/vendor/jqplot/plugins/jqplot.highlighter.min.js')
-    script(src='/vendor/jqplot/plugins/jqplot.pieRenderer.min.js')
-    script(src='/vendor/jqplot/plugins/jqplot.barRenderer.min.js')
-    script(src='/vendor/jqplot/plugins/jqplot.categoryAxisRenderer.min.js')
-    script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js')
-    script(src='//cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js')
-    script(src='//cdn.datatables.net/responsive/1.0.1/js/dataTables.responsive.js')
-    script(src='//cdn.datatables.net/plug-ins/725b2a2115b/integration/bootstrap/3/dataTables.bootstrap.js')
-    script(src='/javascripts/chart.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+    script(src='//netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js')
+    script(src='//cdn.datatables.net/1.10.7/js/jquery.dataTables.min.js')
+    script(src='//cdn.datatables.net/responsive/1.0.6/js/dataTables.responsive.js')
+    script(src='//cdn.datatables.net/plug-ins/1.10.7/integration/bootstrap/3/dataTables.bootstrap.js')
+    script(type='text/javascript', src='https://www.google.com/jsapi')
     script.
       $(document).ready(function(){
         function update_stats(){
@@ -160,10 +152,6 @@ html
                   a.navbar-link(href='/info')
                     span.glyphicon.glyphicon-info-sign
                     span.menu-text #{settings.locale.menu_api}
-              li
-                a.navbar-link(href='/bootstrap.dat-09072015-(875331).zip')
-                  span.glyphicon.glyphicon-cd
-                  span.menu-text Bootstrap.dat
     .col-md-12
       .row.text-center
         .col-md-2.col-md-offset-1
@@ -222,5 +210,5 @@ html
             p(style='margin-top:15px;')
               a.navbar-link(href='https://github.com/iquidus/explorer', target='_blank') Powered by Iquidus Explorer
       span.connections
-        label#lblBlockcount.label.label-info -
-        label#lblConnections.label.label-info -
+        label#lblBlockcount.label.label-default -
+        label#lblConnections.label.label-default -
